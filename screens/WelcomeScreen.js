@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Text, View, Image, Pressable} from 'react-native'; // Import Pressable
+import {Text, View, Image, Pressable} from 'react-native';
 
 /**
  * Welcome screen component
