@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Text, View, Image, TextInput, Alert, Pressable} from 'react-native';
+import {Text, View, Image, TextInput, Alert, Pressable, StyleSheet} from 'react-native';
 import {validateEmail} from '../utils';
 
 /**
@@ -52,7 +52,7 @@ const SubscribeScreen = () => {
 /**
  * Styles for the SubscribeScreen component
  */
-const styles = {
+const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     fontWeight: 'bold',
@@ -105,6 +105,6 @@ const styles = {
     fontWeight: 'bold',
     textAlign: 'center',
   }
-}
+});
 
 export default SubscribeScreen;

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Text, View, Image, Pressable} from 'react-native';
+import {Text, View, Image, Pressable, StyleSheet} from 'react-native';
 
 /**
  * Welcome screen component
@@ -34,7 +34,7 @@ const WelcomeScreen = ({ navigation }) => {
 /**
  * Styles for the WelcomeScreen component
   */
-const styles = {
+const styles = StyleSheet.create({
   image: {
     width: 300,
     height: 300,
@@ -69,6 +69,6 @@ const styles = {
     fontWeight: 'bold',
     textAlign: 'center',
   }
-};
+});
 
 export default WelcomeScreen;
