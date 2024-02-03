@@ -1,7 +1,12 @@
 import * as React from 'react';
-import {Text, View} from 'react-native';
-import { Image } from 'react-native';
+import {Text, View, Image, Pressable} from 'react-native'; // Import Pressable
 
+/**
+ * Welcome screen component
+ * @param navigation
+ * @returns {JSX.Element}
+ * @constructor
+ */
 const WelcomeScreen = ({ navigation }) => {
   return (
     <View>
@@ -11,20 +16,24 @@ const WelcomeScreen = ({ navigation }) => {
       />
       <Text
         style={styles.text}
-        onPress={() => navigation.navigate('Subscribe')}
       >
         Little Lemon, your local Mediterranean Bistro
       </Text>
-      <Text
+      {/* Replace Text with Pressable for the Subscribe button */}
+      <Pressable
         style={styles.button}
         onPress={() => navigation.navigate('Subscribe')}
       >
-        Subscribe
-      </Text>
+        {/* Text inside Pressable to display button label */}
+        <Text style={styles.buttonText}>Subscribe</Text>
+      </Pressable>
     </View>
   );
 };
 
+/**
+ * Styles for the WelcomeScreen component
+  */
 const styles = {
   image: {
     width: 300,
@@ -47,7 +56,7 @@ const styles = {
     padding: 20,
     width: '80%',
     backgroundColor: 'olive',
-    color: 'white',
+    // Remove color from here as it's moved inside Text component
     fontWeight: 'bold',
     textAlign: 'center',
     marginLeft: 'auto',
@@ -55,7 +64,11 @@ const styles = {
     marginTop: 50,
     borderRadius: 10,
   },
+  buttonText: {
+    color: 'white', // Apply color to the Text component
+    fontWeight: 'bold',
+    textAlign: 'center',
+  }
 };
-
 
 export default WelcomeScreen;
