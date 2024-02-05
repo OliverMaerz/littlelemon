@@ -1,7 +1,12 @@
-Exercise for Coursera based on Coursera's starter code from https://www.coursera.org/learn/react-native-course/.
+# Little Lemon App with newsletter signup
+based on the starter code from Coursera course "React Native" in the React Native Specialization
 
-## Little Lemon
+https://www.coursera.org/learn/react-native-course
 
-This is the code example for the newsletter subscription application.
+## Installation
 
-![](little_lemon.gif)
+1. Clone the repository
+2. Run `yarn install` to install the dependencies
+3. Run `yarn start` to start the app
+
+Uses Expo SDK version 50
